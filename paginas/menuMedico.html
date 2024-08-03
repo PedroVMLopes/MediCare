@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Menu - Médico</title>
 </head>
 
 <body>
@@ -15,7 +15,40 @@
 		<div class="lembretes">
 			<h2>Lembretes</h2>
 			<div class="item__lembrete">
-				
+				<div class="icone__lembrete"> ! </div>
+				<div class="informacoes__lembrete">
+					<div class="paciente__lembrete">Nome, idade</div>
+					<div class="consulta__lembrete"> horário - Sala</div>
+					<btn class="infoAdicionais__lembrete">Informações adicionais</btn>
+				</div>
+			</div>
+		</div>
+		<div class="informacoes__medico">
+			<div class="buscar__paciente">
+				<h3>Buscar Paciente</h3>
+				<form class="form__busca__paciente">
+					<input name="nome" id="nome" class="campo__escrita" type="nome" minlength="3" required />
+					<div>
+						<input value=">" class="formulario__botao" id="enviar" data-botao-enviar type="submit">
+						<span class="mensagem-erro"></span>
+					</div>
+				</form>
+			</div>
+			<div class="solicitacoes__pendentes">
+				<button class="btn__solicitacoes__pendentes">
+					<div class="info__solicitacoes__pendentes">
+						<H3>Solicitações Pendentes</H3>
+						<H3> > </H3>
+					</div>
+				</button>
+			</div>
+			<div class="meu__perfil">
+				<button class="btn__meu__perfil">
+					<div class="info__meu__perfil">
+						<H3>Meu Perfil</H3>
+						<H3> > </H3>
+					</div>
+				</button>
 			</div>
 		</div>
 	</div>

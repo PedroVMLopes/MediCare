@@ -4,11 +4,18 @@ body {
   justify-content: center;
 }
 
+:root {
+  --cinza-claro: rgba(52, 58, 64, 0.5);
+  --fonte-principal: "Montserrat", sans-serif;
+  --fonte-logo: "Inter", sans-serif;
+}
+
 .content {
   margin: 0px;
   padding: 0px;
 
   min-width: 25rem;
+  min-height: 700px;
   max-width: 400px;
 
   background-color: #fff;
@@ -18,5 +25,95 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font: var(--fonte-principal);
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: none;
+}
+
+.form * {
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  border: none;
+}
+
+.form__title {
+  align-items: center;
+}
+
+.formulario__termos {
+  flex-direction: row;
+}
+
+.campo__etiqueta {
+  margin-right: 1rem;
+}
+
+.plano__input,
+.termos__input {
+  margin-right: 1rem;
+}
+
+.btn__avancar {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.campo__escrita {
+  border: 1px solid var(--cinza-claro);
+  border-radius: 20px;
+  padding: 0.6em;
+}
+
+/* Estilos do botão de enviar o formulário */
+.btn__avancar {
+  width: fit-content;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+}
+
+.btn__avancar:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.btn__avancar::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.btn__avancar:hover::before {
+  width: 250%;
+}
+
+.formulario__botao {
+  display: none;
 }

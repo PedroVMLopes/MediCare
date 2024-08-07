@@ -5,18 +5,19 @@ body {
 }
 
 :root {
-  --cinza-claro: rgba(52, 58, 64, 0.5);
+  --cinza-claro: rgba(52, 58, 64, 0.4);
   --fonte-principal: "Montserrat", sans-serif;
   --fonte-logo: "Inter", sans-serif;
 }
 
 .content {
   margin: 0px;
-  padding: 0px;
+  padding: 1rem;
 
   min-width: 25rem;
   min-height: 700px;
   max-width: 400px;
+  max-height: 800px;
 
   background-color: #fff;
   border-radius: 1rem;
@@ -24,8 +25,8 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font: var(--fonte-principal);
+  justify-content:left;
+  font-family: var(--fonte-principal);
 }
 
 .hidden {
@@ -43,27 +44,26 @@ body {
   border: none;
 }
 
+/* Campo do formulário escrito */
 .form__title {
   align-items: center;
+  margin: 1rem 2rem 0rem 2rem;
+
+  color: #2c9caf;
 }
 
-.formulario__termos {
-  flex-direction: row;
+.formulario__botao {
+  display: none;
+}
+
+.formulario__campo {
+  margin: 1rem;
+  padding-right: 1rem;
 }
 
 .campo__etiqueta {
-  margin-right: 1rem;
-}
-
-.plano__input,
-.termos__input {
-  margin-right: 1rem;
-}
-
-.btn__avancar {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
+  margin-left: 0.6rem;
+  margin-bottom: 0.2rem;
 }
 
 .campo__escrita {
@@ -72,22 +72,38 @@ body {
   padding: 0.6em;
 }
 
+.plano__input,
+.termos__input {
+  margin-right: 1rem;
+}
+
+/* Campo das checkbox do formulário*/
+.formulario__termos {
+  flex-direction: row;
+  align-self:flex-start;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 /* Estilos do botão de enviar o formulário */
 .btn__avancar {
   width: fit-content;
-  padding: 1em 2em;
+  padding: 0.7em 1.2em;
   border: none;
   border-radius: 5px;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   cursor: pointer;
   color: #2c9caf;
   transition: all 1000ms;
   font-size: 15px;
-  position: relative;
   overflow: hidden;
   outline: 2px solid #2c9caf;
+
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  align-self: center;
 }
 
 .btn__avancar:hover {
@@ -114,6 +130,5 @@ body {
   width: 250%;
 }
 
-.formulario__botao {
-  display: none;
-}
+
+

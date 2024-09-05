@@ -1,5 +1,5 @@
 body {
-  background-color: #212529;
+  background-color: hsl(210 30% 24%);
   display: flex;
   justify-content: center;
 }
@@ -8,6 +8,20 @@ body {
   --cinza-claro: rgba(52, 58, 64, 0.4);
   --fonte-principal: "Montserrat", sans-serif;
   --fonte-logo: "Inter", sans-serif;
+}
+
+.background {
+  background-color: #2c9caf;
+  padding-top: 25px;
+  border-radius: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .content {
@@ -20,12 +34,13 @@ body {
   max-height: 800px;
 
   background-color: #fff;
-  border-radius: 1rem;
-  padding: 1%;
+  border-radius: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   display: flex;
   flex-direction: column;
-  justify-content:left;
+  justify-content: left;
   font-family: var(--fonte-principal);
 }
 
@@ -35,6 +50,10 @@ body {
 
 .invisible {
   visibility: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .form * {
@@ -48,7 +67,6 @@ body {
 .form__title {
   align-items: center;
   margin: 1rem 2rem 0rem 2rem;
-
   color: #2c9caf;
 }
 
@@ -80,7 +98,7 @@ body {
 /* Campo das checkbox do formulário*/
 .formulario__termos {
   flex-direction: row;
-  align-self:flex-start;
+  align-self: flex-start;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -129,6 +147,3 @@ body {
 .btn__avancar:hover::before {
   width: 250%;
 }
-
-
-

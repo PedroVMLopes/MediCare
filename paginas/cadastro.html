@@ -10,58 +10,68 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../Stylesheet/style.css">
+	<link rel="stylesheet" href="../Stylesheet/logoStyle.css">
 </head>
 
 <body>
-	<main class="content">
-		<section class="form">
-			<div class="form__title">
-				<h2>CADASTRO DE USUÁRIO</h2>
-			</div>
-			<form class="main__form">
-				<fieldset class="formulario__campo">
-					<label class="campo__etiqueta" for="nome">Nome:</label>
-					<input name="nome" id="nome" class="campo__escrita" type="nome" minlength="3" required />
-					<span class="mensagem-erro"></span>
-				</fieldset>
-				<fieldset class="formulario__campo">
-					<label class="campo__etiqueta" for="email">E-mail:</label>
-					<input name="email" id="email" class="campo__escrita" type="email" minlength="4" required />
-					<span class="mensagem-erro"></span>
-				</fieldset>
-				<fieldset class="formulario__campo">
-					<label class="campo__etiqueta" for="cpf">CPF (apenas números):</label>
-					<input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text"
-						minlength="11" maxlength="14" />
-					<span class="mensagem-erro"></span>
-				</fieldset>
-				<fieldset class="formulario__campo">
-					<label class="campo__etiqueta" for="aniversario">Data de nascimento:</label>
-					<input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor" type="date"
-						required />
-					<span class="mensagem-erro"></span>
-				</fieldset>
-				<fieldset class="formulario__termos">
-					<input name="plano" class="plano__input" type="checkbox" required>
-					<p class="termos__texto">Marque essa opção se possuir plano de saúde privado</p>
-					<span class="mensagem-erro"></span>
-				</fieldset>
-				<fieldset class="formulario__termos">
-					<input name="termos" class="termos__input" type="checkbox" required>
-					<p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados conforme
-						descrito na Política de Privacidade do banco.</p>
-					<span class="mensagem-erro"></span>
-				</fieldset>
-				<button value="Avançar" class="btn__avancar"> Enviar <input class="formulario__botao hidden"
-						id="enviar"
-						data-botao-enviar
-						type="submit">
-					<span class="mensagem-erro"></span>
-				</button>
-			</form>
-		</section>
-	</main>
+	<div class="background">
+		<div class="menu__topo">
+			<button class="btn__menu"><img src="/Icones/menu-aberto.png"></button>
+			<h1><span class="underlined underline-clip">MediCare</span></h1>
+		</div>
+		<main class="content">
+			<section class="form">
+				<div class="form__title">
+					<h2>CADASTRO DE USUÁRIO</h2>
+				</div>
+				<form class="main__form">
+					<fieldset class="formulario__campo">
+						<label class="campo__etiqueta" for="nome">Nome:</label>
+						<input name="nome" id="nome" class="campo__escrita" type="nome" minlength="3" required />
+						<span class="mensagem-erro"></span>
+					</fieldset>
+					<fieldset class="formulario__campo">
+						<label class="campo__etiqueta" for="email">E-mail:</label>
+						<input name="email" id="email" class="campo__escrita" type="email" minlength="4" required />
+						<span class="mensagem-erro"></span>
+					</fieldset>
+					<fieldset class="formulario__campo">
+						<label class="campo__etiqueta" for="cpf">CPF (apenas números):</label>
+						<input name="cpf" id="cpf" class="campo__escrita campo__escrita--menor" required type="text"
+							minlength="11" maxlength="14" />
+						<span class="mensagem-erro"></span>
+					</fieldset>
+					<fieldset class="formulario__campo">
+						<label class="campo__etiqueta" for="aniversario">Data de nascimento:</label>
+						<input name="aniversario" id="aniversario" class="campo__escrita campo__escrita--menor"
+							type="date"
+							required />
+						<span class="mensagem-erro"></span>
+					</fieldset>
+					<fieldset class="formulario__termos">
+						<input name="plano" class="plano__input" type="checkbox">
+						<p class="termos__texto">Marque essa opção se possuir plano de saúde privado</p>
+						<span class="mensagem-erro"></span>
+					</fieldset>
+					<fieldset class="formulario__termos">
+						<input name="termos" class="termos__input" type="checkbox" required>
+						<p class="termos__texto">Li e estou ciente quanto às condições de tratamento dos meus dados
+							conforme descrito na Política de Privacidade do banco.</p>
+						<span class="mensagem-erro"></span>
+					</fieldset>
+					<a href="../paginas/menuPaciente.html">
+						<button value="Avançar" class="btn__avancar"> Enviar <input class="formulario__botao hidden"
+								id="enviar"
+								data-botao-enviar
+								type="submit">
+							<span class="mensagem-erro"></span>
+						</button>
+					</a>
+				</form>
+			</section>
+		</main>
+	</div>
 </body>
 
 </html>

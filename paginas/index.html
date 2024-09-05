@@ -5,16 +5,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menu inicial</title>
-	<link rel="stylesheet" href="../style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../Stylesheet/style.css">
+	<link rel="stylesheet" href="../Stylesheet/stylesLogin.css">
+	<link rel="stylesheet" href="../Stylesheet/logoStyle.css">
 </head>
 
 <body>
-	<div class="content">
-		<div class="cabecalho">Seja bem vindo!</div>
-		<div class="subtexto">Selecione o menu desejado</div>
-		<div class="selecao__login">
-			<a href="./menuPaciente.html"><button class="btn__login"> Paciente </button></a>
-			<a href="./menuMedico.html"><button class="btn__login"> Médico </button></a>
+	<div class="background">
+		<div class="menu__topo">
+			<button><img src="/Icones/menu-aberto.png"></button>
+			<h1><span class="underlined underline-clip">MediCare</span></h1>
+		</div>
+		<div class="content">
+			<div class="cabecalho">Seja bem vindo!</div>
+			<div class="subtexto">Qual seu tipo de acesso ?</div>
+			<div class="selecao__login">
+				<a href="./menuPaciente.html"><button class="btn__login"> Paciente </button></a>
+				<a href="./menuMedico.html"><button class="btn__login"> Médico </button></a>
+			</div>
+			<div class="criarConta">Não possui conta? <a href="./cadastro.html">Clique aqui</a></div>
 		</div>
 	</div>
 </body>

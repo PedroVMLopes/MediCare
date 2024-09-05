@@ -1,0 +1,65 @@
+:root {
+  --cinza-claro: rgba(52, 58, 64, 0.4);
+  --fonte-principal: "Montserrat", sans-serif;
+  --fonte-logo: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.background {
+  background-color: #2c9caf;
+  padding-top: 25px;
+  border-radius: 20px;
+}
+
+.content {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cabecalho {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 1rem;
+}
+
+.subtexto {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.selecao__login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn__login {
+  padding: 10px 20px;
+  background-color: #2c9caf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.criarConta {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+

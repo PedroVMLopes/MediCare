@@ -1,0 +1,133 @@
+:root {
+  --cinza-claro: rgba(52, 58, 64, 0.4);
+  --fonte-principal: "Montserrat", sans-serif;
+  --fonte-logo: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.background {
+  background-color: #2c9caf;
+  padding-top: 25px;
+  border-radius: 20px;
+}
+
+.content {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 i2px 5px rgba(0, 0, 0, 0.3);
+  width: max-content;
+}
+
+.cabecalho {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 1rem;
+}
+
+.subtexto {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 2rem;
+}
+
+.selecao__login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn__login {
+  padding: 10px 20px;
+  background-color: #2c9caf;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.criarConta {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-top: 2rem;
+}
+
+.item__lembrete {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b6bbc4;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.localizacao__lembrete {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.consulta__lembrete {
+  font-size: small;
+  padding: 0.3rem;
+  padding-top: 0.2rem;
+  color: #7d7c7c;
+}
+
+.informacoes__lembrete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nome__lembrete {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fale__conosco {
+  background-color: #9bbec8;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.7rem;
+}
+
+.info__informacoes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn__informacoes {
+  border: none;
+  border-radius: 15px;
+  background-color: #dfdfde;
+  width: 100%;
+}
